@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}
+Posts
+{% endblock %}
+{% block content %}
+<section class="posts">
+    {% for el in articles %}
+    <div class="alert">
+        <h2>{{ el.title }}</h2>
+        <p>{{ el.intro }}</p>
+        <p><b>Datums: {{ el.date.date() }}</b></p>
+        <button class="warning">Detail</button>
+    </div>
+    {% endfor %}
+</section>
+{% endblock content %}

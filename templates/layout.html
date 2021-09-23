@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <div class="btn">
+        <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+        <div class="text">Menu</div>
+        <ul>
+            <li class="active"><a href="/">Home</a></li>
+            <li>
+                <a href="#" class="feat-btn">Portfolio
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="feat-show">
+                    <li><a href="/web">Web</a></li>
+                    <li><a href="/app">App</a></li>
+                </ul>
+            </li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/cv">CV</a></li>
+            <li><a href="/posts">Posts</a></li>
+        </ul>
+    </nav>
+
+
+    <main role="main" class="container">
+        <div class="content">
+
+            {% block content %}{% endblock %}
+
+
+        </div>
+
+    </main>
+
+    <script src="static/app.js"></script>
+</body>
+
+</html>

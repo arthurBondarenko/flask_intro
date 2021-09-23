@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}
+Create Article
+{% endblock %}
+{% block content %}
+<h1 class="section-title">Create Article</h1>
+
+<section class="article">
+    <form class="contact__form" method="POST">
+        <input type="text" name="title" id="title" class="contact__input" placeholder="Title">
+        <textarea name="intro" id="intro" class="contact__input" placeholder="announcement"></textarea>
+        <textarea name="text" id="text" class="contact__input" placeholder="main text"></textarea>
+        <input type="submit" class="button contact__button" value="Nosutit">
+    </form>
+
+</section>
+{% endblock content %}

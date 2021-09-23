@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}
+Kontakti
+{% endblock %}
+{% block content %}
+<section class="contact">
+    <form action="{{url_for('send_message')}}" class="contact__form" method="POST">
+        <div class="contact__inputs">
+            <input type="text" name="name" placeholder="Name" required class="contact__input" id="">
+            <input type="email" name="email" required placeholder="Email" class="contact__input" id="">
+        </div>
+        <div class="contact__inputs">
+            <input type="text" name="subject" placeholder="Subject" class="contact__input" required id="">
+            <input type="number" placeholder="Number" class="contact__input" required id="">
+        </div>
+        <textarea required name="message" id="" cols="0" rows="7" placeholder="Message"
+            class="contact__input"></textarea>
+        <input type="submit" value="Send Message" class="button contact__button">
+    </form>
+
+</section>
+{% endblock content %}

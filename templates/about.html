@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block title %}
+About
+{% endblock %}
+{% set active = "about" %}
+{% block content %}
+<section class="about">
+    <span class="section-subtitle">My History</span>
+    <h2 class="section-title">About me</h2>
+
+    <div class="about__container">
+        <div class="about__data ">
+            <p class="about__description"><span>Sveiki, es esmu <br></span> JK students. </p>
+            <div>
+                <span class="about__number">05</span>
+                <span class="about__achievment">Years without Experience</span>
+            </div>
+
+            <div>
+                <span class="about__number">over 9000</span>
+                <span class="about__achievment">Projects not completed</span>
+            </div>
+            <div>
+
+                <span class="about__number">100+</span>
+                <span class="about__achievment">Hours of procrastination</span>
+            </div>
+
+        </div>
+
+        <img src="static/css/img/me.jpg" alt="about" class="about__img">
+    </div>
+</section>
+{% endblock content %}

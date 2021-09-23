@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}
+Dati
+{% endblock %}
+{% set active = "about" %}
+{% block content %}
+<h3 style="color:wheat">Dati no Faila</h3>
+{% for rindina in rindinas %}
+<p style="color: tomato;">{{ rindina }}</p>
+{% endfor %}
+{% endblock content %}

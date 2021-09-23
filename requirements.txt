@@ -1,0 +1,11 @@
+flask
+Flask-Bcrypt
+Flask-Login
+Flask-Mail
+Flask-SQLAlchemy
+SQLAlchemy
+sqlite3
+WTForms
+flask-login 
+flask-wtf
+
